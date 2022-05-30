@@ -3,6 +3,7 @@
 :root {
   --black: #111111;
   --gray: #666665;
+  --light-blue: #1E90FF;
   --blue: #0000cd;
   --dark-blue: #000080;
   --white: #fefefe;
@@ -34,12 +35,13 @@ body {
 
 .header__navigation__mobile {
   float: right;
-  margin: 0 0 16px 16px;
   background-color: var(--white);
+  border-radius: 8px;
   color: var(--black);
   padding: 16px;
   opacity: 0;
   z-index: 0;
+  margin-top: -300px;
 }
 
 .header__navigation__icon {
@@ -49,50 +51,100 @@ body {
 }
 
 .header_mobile {
+  margin-bottom: 0;
 }
 
 .header__navigation__list {
+  width: 300px;
+}
+
+.header__navigation__list--title {
+  text-transform: uppercase;
 }
 
 .header__navigation__list__item {
+  margin: 8px 0;
+  text-transform: capitalize;
 }
 
 /* MAIN */
 
-.box {
-}
-
 .card {
-}
-
-.box__card {
+  margin: 32px 0;
 }
 
 .card__content {
+  background-color: var(--gray);
+  height: 900px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 16px auto;
+  border-radius: 16px;
+  box-shadow: var(--box-shadow);
+}
+
+.card__content > img {
+  width: 70%;
+  margin-top: 24px;
+  border-radius: 8px;
 }
 
 .card__title {
+  font-size: 2rem;
 }
 
 .card__info {
+  width: 100%;
 }
 
 .card__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
 }
 
-.card__info {
+.card__info--item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0 .5rem;
+}
+
+.card__info--item > p {
+  color: var(--light-blue);
 }
 
 .card__detail {
-}
-
-.card__button {
+  margin: 24px 0;
 }
 
 .card__button--detail {
+  padding: 12px;
+  border: 1px solid var(--light-blue);
+  background-color: var(--light-blue);
+  font-size: 1rem;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 8px;
 }
 
 /* BREAKPOINTS */
+
+@media only screen and (min-width: 425px) {
+  .card__content > img {
+    max-width: 350px;
+  }
+}
 
 @media only screen and (min-width: 1024px) {
 }
@@ -101,47 +153,4 @@ body {
 
 .hidden {
   display: none;
-}
-
-/* ANIMAÇÔES */
-
-@keyframes fromTop {
-  from {
-    margin-top: -100px;
-    opacity: 0;
-  }
-
-  to {
-    margin-top: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes toTop {
-  from {
-    margin-top: 0;
-    opacity: 1;
-  }
-
-  to {
-    margin-top: -100px;
-    opacity: 0
-    
-  }
-}
-
-.show {
-  animation: fromTop 1s;
-  margin-top: 0;
-  opacity: 1;
-  z-index: 0;
-  float: right;
-}
-
-.hide {
-  animation: toTop 1s;
-  margin-left: -300px;
-  opacity: 0;
-  z-index: 1;
-  float: right;
 }
