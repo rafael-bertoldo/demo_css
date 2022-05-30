@@ -1,0 +1,147 @@
+/* GLOBAIS */
+
+:root {
+  --black: #111111;
+  --gray: #666665;
+  --blue: #0000cd;
+  --dark-blue: #000080;
+  --white: #fefefe;
+  --box-shadow: 0 4px 4px 0 #ffffff25;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  box-shadow: var(--box-shadow);
+}
+
+.header__title {
+  text-transform: uppercase;
+}
+
+.header_mobile_icon {
+  cursor: pointer;
+}
+
+.header__navigation__mobile {
+  float: right;
+  margin: 0 0 16px 16px;
+  background-color: var(--white);
+  color: var(--black);
+  padding: 16px;
+  opacity: 0;
+  z-index: 0;
+}
+
+.header__navigation__icon {
+  width: 48px;
+  color: var(--white);
+  z-index: 1;
+}
+
+.header_mobile {
+}
+
+.header__navigation__list {
+}
+
+.header__navigation__list__item {
+}
+
+/* MAIN */
+
+.box {
+}
+
+.card {
+}
+
+.box__card {
+}
+
+.card__content {
+}
+
+.card__title {
+}
+
+.card__info {
+}
+
+.card__list {
+}
+
+.card__info {
+}
+
+.card__detail {
+}
+
+.card__button {
+}
+
+.card__button--detail {
+}
+
+/* BREAKPOINTS */
+
+@media only screen and (min-width: 1024px) {
+}
+
+/* AUXILIARES */
+
+.hidden {
+  display: none;
+}
+
+/* ANIMAÇÔES */
+
+@keyframes fromTop {
+  from {
+    margin-top: -100px;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes toTop {
+  from {
+    margin-top: 0;
+    opacity: 1;
+  }
+
+  to {
+    margin-top: -100px;
+    opacity: 0
+    
+  }
+}
+
+.show {
+  animation: fromTop 1s;
+  margin-top: 0;
+  opacity: 1;
+  z-index: 0;
+  float: right;
+}
+
+.hide {
+  animation: toTop 1s;
+  margin-left: -300px;
+  opacity: 0;
+  z-index: 1;
+  float: right;
+}

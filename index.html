@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://kit.fontawesome.com/228fa6f917.js" crossorigin="anonymous"></script>
+
+    <title>Space X</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__title">
+            <h1>space x api</h1>
+        </div>
+        <div class="header__navigation">
+            <img id="header_mobile_icon" class="header__navigation__icon" src="./assets/icons8-menu.svg" alt="menu_mobile">
+        </div>
+        
+    </header>
+    <div id="header_mobile" class="header__navigation__mobile">
+        <ul class="header__navigation__list list">
+            filtrar por:
+            <li class="header__navigation__list__item">2 ou mais estágios</li>
+            <li class="header__navigation__list__item">custo de lançamento maior que 5000000</li>
+            <li class="header__navigation__list__item">1 ou mais boosters</li>
+            <li class="header__navigation__list__item">porcentagem de sucesso maior que 50%</li>
+        </ul>
+    </div>
+    <main>
+        <div class="box">
+            <div class="card box__card" style="background: url('https://imgur.com/azYafd8.jpg');">
+                <div class="card__content">
+                    <div class="card__title">
+                        <h2>Falcon 1</h2>
+                    </div>
+                    <div class="card__info">
+                        <ul class="card__list list">
+                            <li class="card__info">active<span class="list__value">false</span></li>
+                            <li class="card__info">company<span class="list__value">Space X</span></li>
+                            <li class="card__info">first_flight<span class="list__value">2006-03-24</span></li>
+                            <li class="card__info">cost_per_launch<span class="list__value">67000000</span></li>
+                            <li class="card__info">stages<span class="list__value">2</span></li>
+                            <li class="card__info">boosters<span class="list__value">0</span></li>
+                            <li class="card__info">success_rate_pct<span class="list__value">40</span></li>
+                        </ul>
+                    </div>
+                    <div class="card__detail">
+                        <button class="card__button card__button--detail">Mais detalhes</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card box__card" style="background: url('https://farm1.staticflickr.com/929/28787338307_3453a11a77_b.jpg');">
+                <div class="card__content">
+                    <div class="card__title">
+                        <h2>Falcon 9</h2>
+                    </div>
+                    <div class="card__info">
+                        <ul class="card__list list">
+                            <li class="card__info">active<span class="list__value">true</span></li>
+                            <li class="card__info">company<span class="list__value">Space X</span></li>
+                            <li class="card__info">first_flight<span class="list__value">2010-06-04</span></li>
+                            <li class="card__info">cost_per_launch<span class="list__value">500000000</span></li>
+                            <li class="card__info">stages<span class="list__value">2</span></li>
+                            <li class="card__info">boosters<span class="list__value">0</span></li>
+                            <li class="card__info">success_rate_pct<span class="list__value">97</span></li>
+                        </ul>
+                    </div>
+                    <div class="card__detail">
+                        <button class="card__button card__button--detail">Mais detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
