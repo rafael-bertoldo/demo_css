@@ -14,7 +14,6 @@ function showMenuMobile() {
     menuMobileClasses.add('show')
   }
 
-  // menuMobileClasses.toggle('show')
 }
 
 mobileButton.addEventListener("click", showMenuMobile);
