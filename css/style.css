@@ -164,6 +164,23 @@ body {
 }
 
 @media only screen and (min-width: 1024px) {
+  .header__navigation__icon {
+    cursor: pointer;
+  }
+
+  .header__navigation__list--title {
+    text-transform: uppercase;
+  }
+
+  .header__navigation__list__item {
+    cursor: pointer;
+    transition: .6s;
+  }
+
+  .header__navigation__list__item:hover {
+    color: var(--light-blue)
+  }
+
   .box {
     max-width: 1360px;
     margin: 0 auto;
