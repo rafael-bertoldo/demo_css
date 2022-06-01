@@ -19,6 +19,7 @@ body {
 
 .header {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-around;
   height: 100px;
@@ -40,7 +41,7 @@ body {
   color: var(--black);
   padding: 16px;
   opacity: 0;
-  z-index: 0;
+  position: absolute;
   margin-top: -300px;
 }
 
@@ -151,6 +152,10 @@ body {
 /* BREAKPOINTS */
 
 @media only screen and (min-width: 768px) {
+  .header {
+    justify-content: space-between;
+    padding: 0 5rem;
+  }
   .box {
     flex-direction: row;
     flex-wrap: wrap;
